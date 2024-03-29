@@ -17,11 +17,3 @@ def check_missing(column):
             n_missing = n_missing + 1
 
     return n_missing
-
-
-# Funzione per la normalizzazione dell'intervallo [0,1]:
-def min_max_normalization(data_column):
-    actual = data_column
-    min_value = data_column.min()
-    max_value = data_column.max()
-    return (actual - min_value) / (max_value - min_value)

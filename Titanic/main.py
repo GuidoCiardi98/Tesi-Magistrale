@@ -10,7 +10,8 @@ if __name__ == '__main__':
 
     # Flag per la scelta della parte di codice da eseguire:
 
-    choice = int(input("\nValore da inserire: "))
+    # choice = int(input("\nValore da inserire: "))
+    choice = 3
 
     if choice == 1:  # Preprocessing
         preprocess_choice()

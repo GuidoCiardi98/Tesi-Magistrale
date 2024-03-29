@@ -283,7 +283,7 @@ def model_management():
     print("\n------------------------------------------------------\n\n")
 
     data = pd.read_csv("./preprocessed_file.csv")
-    np.random.seed(5)  #
+    np.random.seed(5)
     X = data.drop(columns="Survived")
     y = data["Survived"]
 
@@ -303,8 +303,8 @@ def model_management():
 
 
     # Costruzione modelli
-    dec_tree = DecisionTreeClassifier(max_depth=5,
-                                      max_leaf_nodes=10)
+    dec_tree = DecisionTreeClassifier(max_leaf_nodes=10,
+                                      max_depth=5)
 
     adaboost = AdaBoostClassifier(n_estimators=300,
                                   learning_rate=0.05)
@@ -313,10 +313,10 @@ def model_management():
                                                    learning_rate=0.6,
                                                    max_depth=4)
     xgboost = XGBClassifier(n_estimators=30,
-                            learning_rate=0.9,
-                            gamma=0.7,
-                            reg_lambda=50,
-                            max_depth=5,
+                            learning_rate=0.6,
+                            gamma=0.2,
+                            reg_lambda=5,
+                            max_depth=8,
                             objective='binary:logistic')
 
 
@@ -384,7 +384,7 @@ def model_management():
 
     # disp.plot()
     plt.tight_layout()
-    plt.show()
+    # plt.show()
 
 
     # Risultati di accuratezza:
