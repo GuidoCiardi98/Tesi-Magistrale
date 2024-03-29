@@ -3,8 +3,7 @@ Nella repository "Tesi-Magistrale" sono riportate due cartelle.
 La cartella "Adult_Income" contiene i file inerenti al secondo dataset trattato nella tesi, in cui si cerca di fare previsioni inerenti al reddito delle varie persone coinvolte.
 In questa sono presenti i file:
 - adult.csv --> È il dataset iniziale;
-- choice_functions.py --> Contiene l'implementazione delle tre funzioni utilizzate durante l'esecuzione del programma. Queste sono inerenti rispettivamente
-                          alla parte di preprocessing, di visualizzazione dei dati e di addestramento e testing dei modelli considerati;
+- choice_functions.py --> Contiene l'implementazione delle tre funzioni utilizzate durante l'esecuzione del programma. Queste sono inerenti rispettivamente alla parte di preprocessing, di visualizzazione dei dati e di addestramento e testing dei modelli considerati;
 - main.py --> Contiene un'opzione di scelta definita mediante un flag "choice", col quale si può scegliere di eseguire singole parti del programma o l'intero codice;
 - preprocessed_file.csv --> È un file che viene generato alla fine della fase di preprocessing e contiene i dati preprocessati;
 - useful_functions.py --> Contiene la funzione implementata per la ricerca dei missing values.
@@ -12,8 +11,7 @@ In questa sono presenti i file:
 La cartella "Titanic" contiene i file inerenti al primo dataset trattato nella tesi, in cui si cerca di prevedere la sopravvivenza dei passeggeri che erano a bordo del Titanic.
 In questa sono presenti i file:
 - titanic_dataset.csv --> È il dataset iniziale;
-- choice_functions.py --> Contiene l'implementazione delle tre funzioni utilizzate durante l'esecuzione del programma. Queste sono inerenti rispettivamente
-                          alla parte di preprocessing, di visualizzazione dei dati e di addestramento e testing dei modelli considerati;
+- choice_functions.py --> Contiene l'implementazione delle tre funzioni utilizzate durante l'esecuzione del programma. Queste sono inerenti rispettivamente alla parte di preprocessing, di visualizzazione dei dati e di addestramento e testing dei modelli considerati;
 - main.py --> Contiene un'opzione di scelta definita mediante un flag "choice", col quale si può scegliere di eseguire singole parti del programma o l'intero codice;
 - preprocessed_file.csv --> È un file che viene generato alla fine della fase di preprocessing e contiene i dati preprocessati;
 - useful_functions.py --> Contiene la funzione implementata per la ricerca dei missing values.
