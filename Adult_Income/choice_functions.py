@@ -175,19 +175,20 @@ def model_management():
     print("Y Test  : ", y_test.shape)
 
     # Costruzione modelli
-    dec_tree = DecisionTreeClassifier(max_depth=8,
-                                      max_leaf_nodes=20)
+    dec_tree = DecisionTreeClassifier(max_leaf_nodes=100,
+                                      max_depth=7)
 
-    adaboost = AdaBoostClassifier(n_estimators=60,
-                                  learning_rate=0.3)
+    adaboost = AdaBoostClassifier(n_estimators=70,
+                                  learning_rate=0.7)
 
-    gradient_boosting = GradientBoostingClassifier(n_estimators=30,
+    gradient_boosting = GradientBoostingClassifier(n_estimators=5,
                                                    learning_rate=0.5,
                                                    max_depth=6)
 
-    xgboost = XGBClassifier(n_estimators=500,
-                            learning_rate=0.5,
-                            gamma=0.6,
+    xgboost = XGBClassifier(n_estimators=300,
+                            learning_rate=0.7,
+                            gamma=0.2,
+                            reg_lambda=0.6,
                             max_depth=5,
                             objective='binary:logistic')
 
@@ -252,7 +253,7 @@ def model_management():
 
     # disp.plot()
     plt.tight_layout()
-    plt.show()
+    # plt.show()
 
     # Risultati di accuratezza:
     score_dt = accuracy_score(y_test, y_pred_dt)
